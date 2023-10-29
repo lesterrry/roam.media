@@ -1,0 +1,5 @@
+.logo
+	= image_tag theme == :dark ? 'ROAM2_B' : 'ROAM2_W', class: 'logo'
+
+	- if defined? show_subtitle
+		%p медиа для диджитал-кочевников

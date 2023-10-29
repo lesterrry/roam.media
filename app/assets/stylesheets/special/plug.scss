@@ -1,0 +1,17 @@
+body.plug {
+  .form {
+    & {
+      margin-top: 78px;
+    }
+    p {
+      font-size: 26px;
+      width: 320px;
+    }
+    input {
+      width: 100%;
+    }
+    a {
+      width: 100%;
+    }
+  }
+}

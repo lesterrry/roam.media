@@ -12,11 +12,13 @@
  *
  *= require_self
  *= require fonts
- *= require promo
+ *= require special/promo
+ *= require special/plug
  *= require nav
  *= require cell
  *= require input
  *= require border
+ *= require logo
  *= require main
  */
 

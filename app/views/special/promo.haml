@@ -1,15 +1,15 @@
 = render_block 'blocks/nav', locals: { items: ['промо', 'о проекте', 'telegram', 'vk'] }
 
-= image_tag 'ROAM_INV', class: 'logo'
+= render_block 'blocks/logo', locals: { theme: :dark }
 
 %p.description= "медиа-платформа для диджитал кочевников,  обширное хранилище структурированной информации о местах  и направлениях, куда цифровым кочевникам нашей страны можно держать курс, в разных масштабах — от стран до кварталов"
 
-.container.highlights
+.container.highlights.tight
 	= render_block 'blocks/cell', class_name: 'l', locals: { title: 'направления', description: 'всё про города,подходящие для диджитал кочевничества' }
 	= render_block 'blocks/cell', class_name: 'r', locals: { title: 'работа', description: 'подборка актуальных профессиях  в онлайне на любой вкус' }
 	= render_block 'blocks/cell', class_name: 'l', locals: { title: 'материалы', description: 'статьи от редакции обо всем,  связанном с диджитал кочевничеством' }
 
-.container.form
+.container.form.tight
 	%p.l Оставайтесь на связи, совсем скоро запуск!
-	.email.border
-		%input{placeholder: 'e-mail'}
+	%input.border{placeholder: 'e-mail'}
+	= link_to 'подписаться на рассылку', 'yandex.ru', class: 'border'

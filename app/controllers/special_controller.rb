@@ -7,5 +7,6 @@
 # frozen_string_literal: true
 
 class SpecialController < ApplicationController
+	def plug; end
 	def promo; end
 end

@@ -2,11 +2,8 @@ body.promo {
   & {
     background-color: #00141F;
   }
-  p, h1 {
+  a, p, input, h1 {
     color: white;
-  }
-  img.logo {
-    width: 100%;
   }
   p.description {
     max-width: 600px;
@@ -15,7 +12,7 @@ body.promo {
   .border {
     border-color: white;
   }
-  .email {
+  .form > * {
     width: 100%;
   }
 }

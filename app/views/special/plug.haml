@@ -1,0 +1,6 @@
+= render_block 'blocks/logo', locals: { theme: :light, show_subtitle: true }
+
+.container.form.tight
+	%p.l Оставайтесь на связи, мы скоро запустимся!
+	%input.border.small{placeholder: 'e-mail'}
+	= link_to 'подписаться на рассылку', 'yandex.ru', class: 'border'
