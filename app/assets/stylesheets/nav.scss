@@ -1,0 +1,39 @@
+.nav {
+  & {
+    display: flex;
+    flex-direction: row;
+  }
+
+  a {
+    & {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 182px;
+      height: 43px;
+      margin-left: -1px;
+      background-image: url("CELL_LR.svg");
+
+      background-size: cover;
+    }
+    &:last-of-type, &:first-of-type {
+      width: 177px;
+    }
+    &:last-of-type {
+      & {
+        rotate: 180deg;
+        background-image: url("CELL_L.svg");
+      }
+      p {
+        rotate: -180deg;
+      }
+    }
+    &:first-of-type {
+      background-image: url("CELL_L.svg");
+    }
+    p {
+      color: black !important;
+    }
+  }
+}

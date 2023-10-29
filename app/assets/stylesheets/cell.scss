@@ -1,0 +1,14 @@
+.cell {
+  & {
+    width: 640px;
+  }
+  h1 {
+    font-style: italic;
+    font-size: 54px;
+    margin-top: 34px;
+    margin-left: 74px;
+  }
+  p {
+    margin: 0 80px 36px 288px;
+  }
+}

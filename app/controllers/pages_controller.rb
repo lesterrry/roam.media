@@ -7,6 +7,8 @@
 # frozen_string_literal: true
 
 class PagesController < ApplicationController
-  def index
-  end
+  def index; end
+  def destinations; end
+  def work; end
+  def stories; end
 end

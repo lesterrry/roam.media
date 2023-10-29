@@ -1,0 +1,21 @@
+body.promo {
+  & {
+    background-color: #00141F;
+  }
+  p, h1 {
+    color: white;
+  }
+  img.logo {
+    width: 100%;
+  }
+  p.description {
+    max-width: 600px;
+    text-align: center;
+  }
+  .border {
+    border-color: white;
+  }
+  .email {
+    width: 100%;
+  }
+}

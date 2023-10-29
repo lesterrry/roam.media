@@ -1,0 +1,44 @@
+body {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+a, p, h1 {
+  font-family: Inter, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  font-size: 54px;
+}
+
+.border {
+  border: 2px solid black;
+  border-radius: 78px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 58px;
+  width: 100%
+}
+
+.container.parent {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1090px;
+}
+
+.container > .l {
+  align-self: flex-start;
+}
+
+.container > .r {
+  align-self: flex-end;
+}

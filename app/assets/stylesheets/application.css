@@ -11,7 +11,13 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_self
+ *= require fonts
+ *= require promo
+ *= require nav
+ *= require cell
+ *= require input
+ *= require border
+ *= require main
  */
 
-@import "styles.css";
-@import "media.css";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");

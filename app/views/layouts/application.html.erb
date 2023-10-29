@@ -10,7 +10,9 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="<%= action_name.gsub('_', '-') %>">
+    <div class="container parent">
+      <%= yield %>
+    </div>
   </body>
 </html>
