@@ -17,8 +17,22 @@
       background-size: cover;
       font-size: 18px;
     }
+    &.active::after {
+      content: '';
+      position: absolute;
+      box-sizing: border-box;
+      width: 90%;
+      height: 80%;
+      border: 1px solid black;
+      border-radius: 40px;
+    }
     &:last-of-type, &:first-of-type {
-      width: 177px;
+      & {
+        width: 177px;
+      }
+      &::after {
+        margin-left: -4px;
+      }
     }
     &:last-of-type {
       & {
