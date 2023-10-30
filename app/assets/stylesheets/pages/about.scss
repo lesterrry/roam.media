@@ -1,0 +1,54 @@
+body.about {
+  .description {
+    & {
+      display: flex;
+      flex-direction: column;
+      gap: 40px
+    }
+    .border {
+      padding: 40px 80px 40px 80px;
+    }
+    p {
+      font-size: 26px;
+      text-align: left;
+    }
+    > div {
+      & {
+        display: flex;
+        flex-direction: row;
+        gap: 40px
+      }
+      & > * {
+        height: 100%;
+        box-sizing: border-box;
+      }
+      &:first-of-type {
+        & {
+          height: 148px;
+        }
+        p {
+          width: 500px;
+        }
+        .img {
+          flex: 1;
+          background-image: url("OLD_PEOPLE.jpeg");
+          background-size: cover;
+          background-position-y: -140px;
+        }
+      }
+      &:last-of-type {
+        & {
+          height: 212px;
+        }
+        .img {
+          flex: 1;
+          background-image: url("MOUNTAIN.jpeg");
+          background-size: cover;
+        }
+        p {
+          width: 760px;
+        }
+      }
+    }
+  }
+}

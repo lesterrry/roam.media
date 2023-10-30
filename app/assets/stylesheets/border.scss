@@ -1,9 +1,14 @@
+.border {
+  border: 2px solid black;
+  border-radius: 78px;
+}
+
 input.border {
   box-sizing: border-box;
   padding: 20px 40px 20px 40px;
 }
 
-a.border, button.border {
+a.border, p.border, button.border {
   box-sizing: border-box;
   padding: 20px 40px 20px 40px;
   text-align: center;

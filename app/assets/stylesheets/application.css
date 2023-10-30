@@ -14,6 +14,7 @@
  *= require fonts
  *= require special/promo
  *= require special/plug
+ *= require pages/about
  *= require nav
  *= require cell
  *= require input
