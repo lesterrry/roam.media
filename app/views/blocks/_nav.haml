@@ -1,8 +1,4 @@
 .nav
 	- items.each do |i|
-		- if i[1].blank?
-			%div
-				%p= i[0]
-		- else
-			%a{href: i[1]}
-				%p= i[0]
+		%a{href: i[1]}
+			%p= i[0]
