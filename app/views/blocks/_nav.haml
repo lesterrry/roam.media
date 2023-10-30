@@ -1,4 +1,4 @@
 .nav
-	- items.each_with_index do |i, index|
-		= link_to 'yandex.ru' do
-			%p= i
+	- items.each do |i|
+		= link_to i[1] do
+			%p= i[0]
