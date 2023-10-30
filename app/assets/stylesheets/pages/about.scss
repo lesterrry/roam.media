@@ -114,7 +114,9 @@ body.about {
     > div {
       display: flex;
       flex-direction: row;
+      justify-content: center;
       gap: 48px;
+      width: 100%;
     }
   }
 }
