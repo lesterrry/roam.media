@@ -1,4 +1,8 @@
 .nav
 	- items.each do |i|
-		= link_to i[1] do
-			%p= i[0]
+		- if i[1].blank?
+			%div
+				%p= i[0]
+		- else
+			%a{href: i[1]}
+				%p= i[0]
