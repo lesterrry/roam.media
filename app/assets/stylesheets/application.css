@@ -17,8 +17,9 @@
  *= require pages/about
  *= require nav
  *= require cell
- *= require input
  *= require border
+ *= require highlight
+ *= require input
  *= require logo
  *= require header
  *= require footer

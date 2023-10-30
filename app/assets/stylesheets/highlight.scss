@@ -1,0 +1,19 @@
+.highlight {
+  & {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 500px;
+    padding: 30px;
+    border-radius: 40px;
+  }
+  h1 {
+    font-style: normal;
+    font-size: 52px;
+  }
+  img {
+    height: 220px;
+  }
+}

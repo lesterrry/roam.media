@@ -12,7 +12,12 @@
 
 .container.tight
 	%h1.l Из чего состоит Roam?
-	= image_tag 'BLOCK_2.svg', class: 'full-width'
+	.highlights.full-width
+		%div
+			= render partial: 'blocks/highlight', locals: { title: 'работа', image: 'MONEY.svg', description: '(вся необходимая информация о профессиях и вакансиях в разных точках мира, частичная занятость и фултайм — все виды онлайн-заработка на любой вкус)' }
+			= render partial: 'blocks/highlight', locals: { title: 'направления', image: 'TICKET.svg', description: '(поиск по специально отобранным местам, которые отлично подходят для кратковременного пребывания и дистанционной работы. Узнайте все плюсы и подводные камни городов и стран)' }
+		%div
+			= render partial: 'blocks/highlight', locals: { title: 'работа', image: 'MONEY.svg', description: '(вся необходимая информация о профессиях и вакансиях в разных точках мира, частичная занятость и фултайм — все виды онлайн-заработка на любой вкус)' }
 
 .container.tight
 	%h1.l Для кого Roam?
