@@ -3,10 +3,21 @@ body {
   padding-bottom: 26px;
 }
 
+img {
+  -webkit-user-drag: none;
+}
+
 button, a, p, h1 {
   font-family: Inter, sans-serif;
   margin: 0;
   color: black;
+}
+
+h1 {
+  font-size: 46px;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -0.05em;
 }
 
 a, button {
@@ -37,7 +48,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 58px;
+  gap: 78px;
   width: 100%
 }
 

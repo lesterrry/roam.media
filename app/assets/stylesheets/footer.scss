@@ -1,0 +1,21 @@
+footer {
+  & {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    width: 160px;
+  }
+  div {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  div:last-of-type > a {
+    text-align: right;
+    margin-right: 0;
+  }
+}

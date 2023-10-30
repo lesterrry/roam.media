@@ -1,1 +1,15 @@
-= render_block 'blocks/header', class_name: 'full-width'
+= render partial: 'blocks/header'
+
+.container.tight
+	%h1.l Что такое Roam?
+	= image_tag 'BLOCK_1.svg', class: 'full-width'
+
+.container.tight
+	%h1.l Из чего состоит Roam?
+	= image_tag 'BLOCK_2.svg', class: 'full-width'
+
+.container.tight
+	%h1.l Для кого Roam?
+	= image_tag 'BLOCK_3.svg', class: 'full-width'
+
+= render partial: 'blocks/footer'
