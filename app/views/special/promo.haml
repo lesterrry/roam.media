@@ -9,7 +9,7 @@
 	= render_block 'blocks/cell', class_name: 'r', locals: { title: 'работа', description: 'подборка актуальных профессиях  в онлайне на любой вкус' }
 	= render_block 'blocks/cell', class_name: 'l', locals: { title: 'материалы', description: 'статьи от редакции обо всем,  связанном с диджитал кочевничеством' }
 
-.container.form.tight
+%form.container.tight#default-form{action: 'https://formspree.io/f/xjvqlqke', method: 'POST'}
 	%p.l Оставайтесь на связи, совсем скоро запуск!
-	%input.border{placeholder: 'e-mail'}
-	= link_to 'подписаться на рассылку', 'yandex.ru', class: 'border'
+	%input.border{type: 'email', name: 'email', placeholder: 'e-mail', required: true}
+	%button.border#form-status{type: 'submit'} подписаться на рассылку

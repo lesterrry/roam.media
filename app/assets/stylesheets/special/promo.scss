@@ -2,7 +2,7 @@ body.promo {
   & {
     background-color: #00141F;
   }
-  a, p, input, h1 {
+  a, p, input, button, h1 {
     color: white;
   }
   p.description {
@@ -12,7 +12,7 @@ body.promo {
   .border {
     border-color: white;
   }
-  .form > * {
+  form > * {
     width: 100%;
   }
 }

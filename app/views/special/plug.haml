@@ -2,5 +2,6 @@
 
 .container.form.tight
 	%p.l Оставайтесь на связи, мы скоро запустимся!
-	%input.border.small{placeholder: 'e-mail'}
-	= link_to 'подписаться на рассылку', 'yandex.ru', class: 'border'
+	%form.container.tight#default-form{action: 'https://formspree.io/f/xjvqlqke', method: 'POST'}
+		%input.border.small{type: 'email', name: 'email', placeholder: 'e-mail', required: true}
+		%button.border#form-status{type: 'submit'} подписаться на рассылку
