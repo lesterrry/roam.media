@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   root 'special#plug'
 	get '/promo', to: 'special#promo'
+	get '/about', to: 'pages#about'
 end

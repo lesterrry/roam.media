@@ -1,4 +1,4 @@
-.nav
+.nav{class: theme == :dark ? 'dark' : ''}
 	- items.each do |i|
 		%a{href: i[1], class: active == i[0] ? 'active' : ''}
 			%p= i[0]

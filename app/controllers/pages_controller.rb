@@ -11,4 +11,5 @@ class PagesController < ApplicationController
   def destinations; end
   def work; end
   def stories; end
+  def about; end
 end

@@ -13,7 +13,7 @@
       width: 182px;
       height: 43px;
       margin-left: -1px;
-      background-image: url("CELL_LR.svg");
+      background-image: url("CELL_LR_W.svg");
       background-size: cover;
       font-size: 18px;
     }
@@ -23,12 +23,13 @@
       box-sizing: border-box;
       width: 90%;
       height: 80%;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 40px;
     }
     &:last-of-type, &:first-of-type {
       & {
         width: 177px;
+        background-image: url("CELL_L_W.svg");
       }
       &::after {
         margin-left: -4px;
@@ -37,17 +38,30 @@
     &:last-of-type {
       & {
         rotate: 180deg;
-        background-image: url("CELL_L.svg");
       }
       p {
         rotate: -180deg;
       }
     }
-    &:first-of-type {
-      background-image: url("CELL_L.svg");
+    p {
+      color: white
+    }
+  }
+
+  &.dark {
+    a {
+      & {
+        background-image: url("CELL_LR.svg");
+      }
+      &:last-of-type, &:first-of-type {
+        background-image: url("CELL_L.svg");
+      }
+      &.active::after {
+        border-color: black;
+      }
     }
     p {
-      color: black !important;
+      color: black;
     }
   }
 }

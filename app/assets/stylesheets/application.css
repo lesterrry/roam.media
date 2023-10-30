@@ -19,6 +19,7 @@
  *= require input
  *= require border
  *= require logo
+ *= require header
  *= require main
  */
 
