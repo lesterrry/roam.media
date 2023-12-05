@@ -30,7 +30,7 @@ input {
 }
 
 input.small {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 button {
@@ -67,4 +67,8 @@ button {
 
 .full-width {
   width: 100%;
+}
+
+.inverted {
+  filter: invert(100%);
 }

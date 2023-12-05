@@ -1,4 +1,11 @@
 body.plug {
+  & {
+    background-color: #00141F;
+  }
+  a, p, input, button, h1 {
+    color: white;
+    border-color: white;
+  }
   .form {
     & {
       margin-top: 78px;
